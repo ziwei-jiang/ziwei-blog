@@ -1,0 +1,147 @@
+
+languageCode: en-us
+baseURL: "https://ziwei-jiang.github.io/"
+title: Ziwei Jiang
+paginate: 5
+theme: PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+#googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Ziwei's Blog
+  description: "This is the website of Ziwei Jiang, Ph.D. student at Purdue University. "
+  keywords: [Blog, Portfolio, Data Science]
+  author: Ziwei Jiang
+  # author: ["Me", "You"] # multiple authors
+  #images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  label:
+    text: "Ziwei Jiang"
+    icon: "images/coding.png"
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: "Welcome! \U0001F44B"
+    subtitle: "I'm a Ph.D. student in the School of Electrical and Computer Engineering at Purdue University. I'm working with Professor Murat Kocaoglu. My research focuses on causal inference and machine learning with the information-theoretic approach. I'm also interested in computer vision, natural language processing, and robotics."
+    imageUrl: "images/dp.png"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: ""
+    buttons:
+      - name: Blogs
+        url: blogs
+      - name: Projects
+        url: projects
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Welcome! \U0001F44B"
+    Content: "I'm a Ph.D. student in the School of Electrical and Computer Engineering at Purdue University. I'm working with Professor Murat Kocaoglu. My research focuses on causal inference and machine learning with the information-theoretic approach. I'm also interested in computer vision, natural language processing, and robotics."
+
+  socialIcons:
+    # - name: googlescholar
+    #   url: "https://scholar.google.com/"
+    - name: github
+      url: "https://github.com/ziwei-jiang"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/ziwei-jiang-b46656112/"
+    - name: goodreads
+      url: "https://www.goodreads.com/user/show/53071850-ziwei-jiang"
+
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: false # hide everywhere but not in structured data
+    hiddenInList: false # hide on list pages and home
+    hiddenInSingle: false # hide on single page
+
+
+  editPost:
+#    URL: "https://github.com/chanin-www/content"
+#    Text: "Suggest Changes" # edit text
+    URL: ""
+    Text: "" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+menu:
+  main:
+    # - identifier: about
+    #   name: About
+    #   url: /about/
+    #   weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 10
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+
+    # - identifier: publications
+    #   name: Publications
+    #   url: /publications/
+    #   weight: 10
+
+
+    #- identifier: example
+    #  name: example.org
+    #  url: https://example.org
+    #  weight: 30
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+# pygmentsUseClasses: true
+# markup:
+#     highlight:
+#         # anchorLineNos: true
+#         codeFences: true
+#         guessSyntax: true
+#         lineNos: true
+#         style: monokai
