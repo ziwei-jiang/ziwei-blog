@@ -53,7 +53,7 @@ params:
   profileMode:
     enabled: false # needs to be explicitly set
     title: "Welcome! \U0001F44B"
-    subtitle: "I'm a Ph.D. student in the School of Electrical and Computer Engineering at Purdue University. I'm working with Professor Murat Kocaoglu. My research focuses on **causal inference** and **machine learning** with the **information-theoretic approach**. I'm also interested in computer vision, natural language processing, and robotics."
+    subtitle: "I'm a Ph.D. student in the School of Electrical and Computer Engineering at Purdue University. I'm working with Professor [Murat Kocaoglu](https://www.muratkocaoglu.com/). My research focuses on **causal inference** and **machine learning** with the **information-theoretic approach**. I'm also interested in computer vision, natural language processing, and robotics."
     imageUrl: "images/dp.png"
     imageWidth: 120
     imageHeight: 120
@@ -67,7 +67,7 @@ params:
   #home-info mode
   homeInfoParams:
     Title: "Welcome! \U0001F44B"
-    Content: "I'm a Ph.D. student in the School of Electrical and Computer Engineering at Purdue University. I'm working with Professor [Murat Kocaoglu](https://www.muratkocaoglu.com/CausalML/). My research focuses on **causal inference** and **machine learning** with the **information-theoretic approach**. I'm also interested in computer vision, natural language processing, and robotics."
+    Content: "I'm a Ph.D. student in the School of Electrical and Computer Engineering at Purdue University. I'm working with Professor [Murat Kocaoglu](https://www.muratkocaoglu.com/). My research focuses on **causal inference** and **machine learning** with the **information-theoretic approach**. I'm also interested in computer vision, natural language processing, and robotics."
 
   socialIcons:
     # - name: googlescholar
