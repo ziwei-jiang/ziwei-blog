@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/ziwei-jiang/ziwei-jiang.github.io.git
+	branch = main
