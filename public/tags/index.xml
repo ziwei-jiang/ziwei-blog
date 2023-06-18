@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Ziwei&#39;s Site</title>
+    <link>https://ziwei-jiang.github.io/tags/</link>
+    <description>Recent content in Tags on Ziwei&#39;s Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 25 Feb 2023 03:14:03 -0500</lastBuildDate><atom:link href="https://ziwei-jiang.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Computational Geometry</title>
+      <link>https://ziwei-jiang.github.io/tags/computational-geometry/</link>
+      <pubDate>Sat, 25 Feb 2023 03:14:03 -0500</pubDate>
+      
+      <guid>https://ziwei-jiang.github.io/tags/computational-geometry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robotics</title>
+      <link>https://ziwei-jiang.github.io/tags/robotics/</link>
+      <pubDate>Tue, 15 Mar 2016 11:30:03 +0000</pubDate>
+      
+      <guid>https://ziwei-jiang.github.io/tags/robotics/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
