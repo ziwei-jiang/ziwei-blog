@@ -102,7 +102,7 @@ The resulting controller is shown below.
 # 3D Quadrotor Control
 
 The last part of this course involves controlling the quadrotor in the 3D world coordinates. To represent the state of the quadrotor, we use rotation matrix $Z-X-Y$ with the axis of the world frame. The coordinate system is shown in the figure below, where $\mathbf{a_i}$ represents the world frame, and $\mathbf{b_i}$ represents the body frame.
-{{< figure align=center src="/projects/robotics_specialization/imgs/course1/aerial_robot.png" width="70%" title="Quadrotor's 3D motion">}}
+{{< figure align=center src="/projects/robotics_specialization/imgs/course1/3d_quad.png" width="70%" title="Quadrotor's 3D motion">}}
 
 The rotation matrix for transform from $\mathcal{A}$ to $\mathcal{B}$ can be represented by the yaw angle $\psi$, roll angle $\phi$, and pitch angle $\theta$:
 
@@ -165,4 +165,4 @@ The 3D trajectory following result is shown in the figures below.
 
 {{< figure align=center src="/projects/robotics_specialization/imgs/course1/3d_plots.png" width="100%" title="Control loops for position and attitude">}}
 
-(Images and codes are from [Robotics Specialization: Aerial Robotcs](https://www.coursera.org/learn/robotics-flight).)
+(Images and codes are from [Robotics : Aerial Robotics](https://www.coursera.org/learn/robotics-flight).)

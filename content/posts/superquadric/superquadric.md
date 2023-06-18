@@ -3,7 +3,7 @@ title: "Extended Superquadric"
 date: 2023-02-25T03:14:03-05:00
 weight: 5
 # aliases: ["/first"]
-tags: ["Computer Vision", "Computational Geometry"]
+tags: ["Computational Geometry"]
 author: "Me"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -39,7 +39,7 @@ editPost:
     appendFilePath: true # to append file path to Edit link
 ---
 Superquadric modeling was my first project in the grad school. Not many 3D modeling techniques was available as they are today. Using parametric models to describe 3D shapes has several advantages. First, this is a robust and efficient way to represent and recover 3D models for applications like large-scale building modeling. Second, the parametric model provides a natural way to describe shapes as primitives for applications such as point cloud segmentation and robot grasping.
-We used a variation called extended superquadric by Lin and Kambhamettu (2001) for the project. 
+We used a variation called extended superquadric by [Lin and Kambhamettu (2001)](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=fed4a22266c2da42c12b2c8cbd2512e6735531f0) for the project. 
 It involves some concepts in computational graphic, one without such background might need some time to grasp the idea. So I hope this post could be helpful as introductory material summarizing key points about the extended superquadric.
 
 

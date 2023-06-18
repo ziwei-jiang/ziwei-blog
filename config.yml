@@ -1,7 +1,7 @@
 
 languageCode: en-us
 baseURL: "https://ziwei-jiang.github.io/"
-title: Ziwei Jiang
+title: Ziwei's Site
 paginate: 5
 theme: PaperMod
 
@@ -45,16 +45,22 @@ params:
   - posts
   - projects
   label:
-    text: "Ziwei Jiang(姜子维)"
-    icon: "images/coding.png"
+    text: "Ziwei Jiang 姜子维"
+    # icon: "img/abra.png"
+    icon: "img/abra_icon.png"
     iconHeight: 35
-
+  assets:
+    favicon: "img/abra_icon.png"
+    favicon16x16: "img/abra_icon.png"
+    favicon32x32: "img/abra_icon.png"
+    apple_touch_icon: "img/abra_icon.png"
+    safari_pinned_tab: "img/abra_icon.png"
   # profile-mode
   profileMode:
     enabled: false # needs to be explicitly set
     title: "Welcome! \U0001F44B"
-    subtitle: "I'm a Ph.D. student in the School of Electrical and Computer Engineering at Purdue University. I'm working with Professor [Murat Kocaoglu](https://www.muratkocaoglu.com/). My research focuses on **causal inference** and **machine learning** with the **information-theoretic approach**. I'm also interested in computer vision, natural language processing, and robotics."
-    imageUrl: "images/dp.png"
+    subtitle: "Hi, my name is Ziwei Jiang. I'm a Ph.D. student at Purdue University working with Professor [Murat Kocaoglu](https://www.muratkocaoglu.com/). My research focuses on **causal inference** and **machine learning** with the **information-theoretic approach**. I'm also interested in computer vision, natural language processing, and robotics."
+    imageUrl: "images/coding.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: ""
@@ -67,15 +73,17 @@ params:
   #home-info mode
   homeInfoParams:
     Title: "Welcome! \U0001F44B"
-    Content: "I'm a Ph.D. student in the School of Electrical and Computer Engineering at Purdue University. I'm working with Professor [Murat Kocaoglu](https://www.muratkocaoglu.com/). My research focuses on **causal inference** and **machine learning** with the **information-theoretic approach**. I'm also interested in computer vision, natural language processing, and robotics."
+    Content: "Hi, my name is Ziwei Jiang. I'm a Ph.D. student at Purdue University working with Professor [Murat Kocaoglu](https://www.muratkocaoglu.com/). My research focuses on **causal inference** and **machine learning** with the **information-theoretic approach**. I'm also interested in computer vision, natural language processing, and robotics."
 
   socialIcons:
-    # - name: googlescholar
-    #   url: "https://scholar.google.com/"
+    - name: googlescholar
+      url: "https://scholar.google.com/"
     - name: github
       url: "https://github.com/ziwei-jiang"
-    - name: linkedin
-      url: "https://www.linkedin.com/in/ziwei-jiang-b46656112/"
+    # - name: linkedin
+    #   url: "https://www.linkedin.com/in/ziwei-jiang-b46656112/"
+    - name: 500px
+      url: "https://500px.com/p/ZiweiJiang?view=photos"
     - name: goodreads
       url: "https://www.goodreads.com/user/show/53071850-ziwei-jiang"
 
@@ -91,7 +99,6 @@ params:
     hidden: false # hide everywhere but not in structured data
     hiddenInList: false # hide on list pages and home
     hiddenInSingle: false # hide on single page
-
 
   editPost:
 #    URL: "https://github.com/chanin-www/content"
@@ -129,10 +136,10 @@ menu:
       url: /posts/
       weight: 10
 
-    # - identifier: publications
-    #   name: Publications
-    #   url: /publications/
-    #   weight: 10
+    - identifier: publications
+      name: Publications
+      url: /publications/
+      weight: 10
 
 
     #- identifier: example
