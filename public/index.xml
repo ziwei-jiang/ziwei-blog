@@ -6,14 +6,32 @@
     <description>Recent content on Ziwei&#39;s Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 25 Feb 2023 03:14:03 -0500</lastBuildDate><atom:link href="https://ziwei-jiang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Jul 2023 11:30:03 +0000</lastBuildDate><atom:link href="https://ziwei-jiang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Approximate Causal Effect Identification under Weak Confounding</title>
+      <link>https://ziwei-jiang.github.io/projects/causal_effect_under_weak_confounding/weak_confounding/</link>
+      <pubDate>Tue, 18 Jul 2023 11:30:03 +0000</pubDate>
+      
+      <guid>https://ziwei-jiang.github.io/projects/causal_effect_under_weak_confounding/weak_confounding/</guid>
+      <description>Overview In this project, We aimed to investigate the relationship between the influence of unobserved confounders and the deviation of spurious correlation from the true causal effect. This is similar to the concept of sensitivity analysis in the causal effect estimation. We utilized entropy as a measure to quantify the strength of the confounder and developed an algorithm to estimate bounds for the causal effect based on the observational distribution and the strength of confounders.</description>
+    </item>
+    
     <item>
       <title>Extended Superquadric</title>
       <link>https://ziwei-jiang.github.io/posts/superquadric/superquadric/</link>
-      <pubDate>Sat, 25 Feb 2023 03:14:03 -0500</pubDate>
+      <pubDate>Mon, 07 Feb 2022 03:14:03 -0500</pubDate>
       
       <guid>https://ziwei-jiang.github.io/posts/superquadric/superquadric/</guid>
       <description>A brief introduction to extended superquadrics.</description>
+    </item>
+    
+    <item>
+      <title>Robotics Specialization: Perception</title>
+      <link>https://ziwei-jiang.github.io/projects/robotics_specialization/perception/</link>
+      <pubDate>Sun, 15 Jan 2017 11:30:03 +0000</pubDate>
+      
+      <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/perception/</guid>
+      <description>Camera model and computer vision for robots </description>
     </item>
     
     <item>

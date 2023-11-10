@@ -3,7 +3,7 @@ title: "Robotics Specialization: Computational Motion Planning"
 date: 2016-03-15T11:30:03+00:00
 weight: 5
 # aliases: ["/first"]
-tags: ["Robotics"]
+tags: ["Robotics", "Graph"]
 author: "Me"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -17,7 +17,7 @@ disableHLJS: true # to disable highlightjs
 disableShare: true
 disableHLJS: false
 hideSummary: false
-searchHidden: true
+searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: false
 ShowPostNavLinks: true
@@ -34,13 +34,10 @@ cover:
     hidden: false # only hide on current single page
     hiddenInList: false
     hiddenInSingle: false
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+
 ---
 
-Here's the assignments for the *Robotics Specialization: Computational Motion Planning* offered by UPenn on Coursera. 
+Here are the assignments for the *Robotics Specialization: Computational Motion Planning* offered by UPenn on Coursera. 
 
 This is the second course in the robotics specialization. Throughout this course, we have gained knowledge on different techniques for planning robot motions. These include graph-based methods, randomized planners, and artificial potential fields.
 

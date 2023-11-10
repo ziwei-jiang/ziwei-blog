@@ -3,7 +3,7 @@ title: "Robotics Specialization: Aerial Robotics"
 date: 2016-02-15T11:30:03+00:00
 weight: 5
 # aliases: ["/first"]
-tags: ["Robotics"]
+tags: ["Robotics", "Control"]
 author: "Me"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -17,7 +17,7 @@ disableHLJS: true # to disable highlightjs
 disableShare: true
 disableHLJS: false
 hideSummary: false
-searchHidden: true
+searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: false
 ShowPostNavLinks: true
@@ -25,6 +25,7 @@ ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 math: true
+
 cover:
     # image: "<image path/url>" # image path/url
     image: "/projects/robotics_specialization/imgs/course1/aerial_robot.png"
@@ -34,13 +35,10 @@ cover:
     hidden: false # only hide on current single page
     hiddenInList: false
     hiddenInSingle: false
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+
 ---
 
-Here's the assignments for the *Robotics Specialization: Aerial Robotics* offered by UPenn on Coursera. 
+Here are the assignments for the *Robotics Specialization: Aerial Robotics* offered by UPenn on Coursera. 
 
 In this course, we learned some basic ideas about autonomous robots and the design of quadrotors. There are three assignments in this course in which we learned to design a PD controller for a quadrotor in 1D, 2D, and 3D. 
 The course provided quadrotor simulators to help with the experiment. The simulator uses MATLAB's ODE solver, ode45, to simulate the behavior of the quadrotor and plt3 to visualize the state of the quadrotor at each time step. 
@@ -124,7 +122,7 @@ Then we can relate the force produced by rotors with the quadrotor motion with N
 
 $$m\mathbf{\ddot{r}} = \begin{bmatrix} 0 \\\ 0\\\ -mg\end{bmatrix} + \mathbf{R} \begin{bmatrix} 0\\\ 0 \\\ \sum_{i=1}^4 F_i \end{bmatrix}.$$
 
-From Euler's equation of motion, we can relate the angular acceleration with the thrust force. Since the moment produced by each rotor is in the reverse direction of its rotation, the moment from the rotor 1 and 3 are in $\mathbf{b_3}$ direction; the rotor 2 and 4 produce moment in $-\mathbf{b_3}$ direction. Then by the Euler equation, we have
+From Euler's equation of motion, we can relate the angular acceleration with the thrust force. Since the moment produced by each rotor is in the reverse direction of its rotation, the moment from the rotor 1 and 3 are in $\mathbf{b_3}$ direction; the rotors 2 and 4 produce moment in $-\mathbf{b_3}$ direction. Then by the Euler equation, we have
 
 $$ I\begin{bmatrix} \dot{p} \\\ \dot{q} \\\ \dot{r} \end{bmatrix} = \begin{bmatrix} L(F_2-F_4) \\\ L(F_3-F_1) \\\ M_1 -M_2+M3 -M_4 \end{bmatrix} - \begin{bmatrix} p\\\ q\\\ r\end{bmatrix} \times I \begin{bmatrix} p \\\ q \\\ r \end{bmatrix},$$
 where $L$ is the distance from the rotor to the center of mass. Let $\gamma = \frac{k_M}{k_F}$, the above equation can be rewrite as 
@@ -142,7 +140,7 @@ The PD controller for attitude control is
 $$ \mathbf{u_2} = \begin{bmatrix} k_{p,\phi}(\phi_{des} - \phi)+ k_{d,\phi}(p_{des}-p) \\\ k_{q,\theta} (\theta_{des} - \theta) + k_{d,\theta}(q_{des} - q) \\\
 k_{r,\phi}(\psi_{des} - \psi) + k_{d, psi}(r_{des}-r) \end{bmatrix} $$
 
-Similar to the 2D case, we linearize the equation of motions to apply the PD controller. The equilibrium point is the configuration at the position where the angular velocity is equal to zero, pitch and roll angle are close to zero. 
+Similar to the 2D case, we linearize the equation of motions to apply the PD controller. The equilibrium point is the configuration at the position where the angular velocity is equal to zero; the pitch and roll angle are close to zero. 
 
 Linearizing Newton's equation, get 
 $$ \ddot{r_1} = g(\Delta \theta \cos\psi_0 + \Delta\phi\sin\psi_0)$$
@@ -159,7 +157,7 @@ $$ (\ddot{r}_{i,T} - \ddot{r} _{i,des}) + k _{d,i}(\dot{r} _{i,T} - \dot{r} _i)+
 
 From the above equation, we can derive the desired pitch and roll angles.
 
-The 3D trajectory following result is shown in the figures below.
+The 3D trajectory result is shown in the figures below.
 
 {{< figure align=center src="/projects/robotics_specialization/imgs/course1/3d_traj.gif" width="70%" title="3D Helix trajectory">}}
 

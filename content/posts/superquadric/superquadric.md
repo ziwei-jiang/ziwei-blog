@@ -1,9 +1,9 @@
 ---
 title: "Extended Superquadric"
-date: 2023-02-25T03:14:03-05:00
+date: 2022-02-07T03:14:03-05:00
 weight: 5
 # aliases: ["/first"]
-tags: ["Computational Geometry"]
+tags: ["Computer Vision"]
 author: "Me"
 # author: ["Me", "You"] # multiple authors
 showToc: true
@@ -17,7 +17,7 @@ disableHLJS: true # to disable highlightjs
 disableShare: true
 disableHLJS: false
 hideSummary: false
-searchHidden: true
+searchHidden: false
 ShowReadingTime: true
 ShowBreadCrumbs: false
 ShowPostNavLinks: true
@@ -33,14 +33,11 @@ cover:
     hidden: false # only hide on current single page
     hiddenInList: false
     hiddenInSingle: false
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
+
 ---
-Superquadric modeling was my first project in the grad school. Not many 3D modeling techniques was available as they are today. Using parametric models to describe 3D shapes has several advantages. First, this is a robust and efficient way to represent and recover 3D models for applications like large-scale building modeling. Second, the parametric model provides a natural way to describe shapes as primitives for applications such as point cloud segmentation and robot grasping.
+Superquadric modeling was my first project in grad school, back when there were not as many 3D modeling techniques available as there are today. Using parametric models to describe 3D shapes has several advantages. First, this is a robust and efficient way to represent and recover 3D models for applications like large-scale building modeling. Second, the parametric model provides a natural way to describe shapes as primitives for applications such as point cloud segmentation and robot grasping.
 We used a variation called extended superquadric by [Lin and Kambhamettu (2001)](https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=fed4a22266c2da42c12b2c8cbd2512e6735531f0) for the project. 
-It involves some concepts in computational graphic, one without such background might need some time to grasp the idea. So I hope this post could be helpful as introductory material summarizing key points about the extended superquadric.
+It involves some concepts in computational graphics, one without such background might need some time to grasp the idea. So I hope this post could be helpful as introductory material summarizing key points about the extended superquadric.
 
 
 # Superquadrics
@@ -48,19 +45,19 @@ It involves some concepts in computational graphic, one without such background 
 Superquadric was introduced by Alan Barr in 1981. It is defined as a family of shapes, including superellipsoid and supertoroids. In most of the existing literature, "superquadrics" refer to superellipsoids since those are the most representative shapes in applications. 
 The superquadric is defined by the following equation. 
 $$\left(\left|\frac{x}{a_1}\right|^{\frac{2}{\epsilon_2}}+ \left|\frac{y}{a_2}\right|^\frac{2}{\epsilon_2}\right)^\frac{\epsilon_2}{\epsilon_1}+\left|\frac{z}{a_3}\right|^\frac{2}{\epsilon_1}=1$$
-Where the $a_1$, $a_2$, and $a_3$ are the scale factor in the $x$, $y$, and $z$ directions, $\epsilon_1$ and $\epsilon_2$ control the squareness in the vertical axis and x-y plane, respectively. This is also known as **inside-outside function**, since it shows the relationship betwwen any point and the surface. The set of superquadrics is shown in the figure. 
+Where the $a_1$, $a_2$, and $a_3$ are the scale factor in the $x$, $y$, and $z$ directions, $\epsilon_1$ and $\epsilon_2$ control the squareness in the vertical axis and x-y plane, respectively. This is also known as the **inside-outside function** since it shows the relationship between any point and the surface. The set of superquadrics is shown in the figure. 
 {{< figure align=center src="/posts/superquadric/superquadrics_photos.png" width="100%" title="Superquadrics">}}
 The best way to understand the superquadric equation intuitively is to express it as a spherical product of two superellipses. 
 
 The **superellipse**, also known as Lame curves, named after French mathematician Gabriel Lame, was discovered long before the popularization of superquadrics. The superellipse is defined by the following equation.
 $$\left(\frac{x}{a_1}\right)^\frac{2}{\epsilon} +\left(\frac{y}{a_2}\right)^\frac{2}{\epsilon} =1$$
 
-Similar to superquadrics, $a_1$ and $a_2$ are the scale factors, and $\epsilon$ is the squareness of the shape.
+Similar to superquadrics, $a_1$ and $a_2$ are the scale factors and $\epsilon$ is the squareness of the shape.
 {{< figure align=center src="/posts/superquadric/superellipse.png" width="60%" title="Superellipse">}}
 
 ## Parametric Form of Superquadrics
 
-The spherical product is defined as an operation of two 2D curves. For the 2D curve $h(\omega)$ and $m(\eta)$, the spherical product is given as following.
+The spherical product is defined as an operation of two 2D curves. For the 2D curve $h(\omega)$ and $m(\eta)$, the spherical product is given as follows.
 $$    h(\omega) = \begin{bmatrix}h_1(\omega) \\\ h_2(\omega) \end{bmatrix},\quad \omega_0 \leq \omega \leq \omega_1 $$
 $$    m(\eta) = \begin{bmatrix}m_1(\eta) \\\ m_2(\eta) \end{bmatrix},\quad \eta_0 \leq \eta \leq \eta_1 $$
 $$    x(\eta,\omega)= h(\omega) \otimes m(\eta) =
@@ -85,7 +82,7 @@ $$r(\phi,\theta) = m(\phi)\otimes h(\theta) = \begin{bmatrix}x\\\y\\\z\end{bmatr
 \sin\phi
 \end{bmatrix}$$
 
-The superquadric is formed by the spherical product of two superellipse.
+The superquadric is formed by the spherical product of two superellipses.
 $$m(\phi) = \begin{bmatrix}sign(\cos\phi)\left|\cos\phi\right|^{\epsilon_1} \\\ a_3 sign(\sin\phi) \left|\sin\phi\right|^{\epsilon_1} \end{bmatrix},\quad-\frac{\pi}{2}\leq\phi\leq \frac{\pi}{2}$$
 $$h(\theta) = \begin{bmatrix}a_1 sign(\cos\theta)\left|\cos\theta\right|^{\epsilon_2} \\\ a_2 sign(\sin\theta)\left|\sin\theta\right|^{\epsilon_2} \end{bmatrix},\quad-\pi\leq\theta\leq \pi $$
 $$r(\phi,\theta) = m(\phi)\otimes h(\theta) = \begin{bmatrix}x\\\y\\\z\end{bmatrix} = \begin{bmatrix} a_1 sign(\cos\phi\cos\theta)\left|\cos\phi\right|^{\epsilon_1} \left|\cos\theta\right|^{\epsilon_2}  \\\
@@ -93,7 +90,7 @@ a_2 sign(\cos\phi\sin\theta)\left|\cos\phi\right|^{\epsilon_1} \left|\sin\theta\
 a_3 sign(\sin\phi) \left|\sin\phi\right|^{\epsilon_1}
 \end{bmatrix}$$
 This is the **parametric form** of the superquadric, which is useful for rendering the shape.
-We can think of $h(\theta)$ as the curve on x-y plane and it swept vertically according to the scale $m_1(\phi)$ and vertical sweeping motion $m_2(\phi)$. Similarly, it can auto be think of as the curve perpendicular to x-y plane sweeping around the z axis according to $h(\theta)$ as shown in the following figure.
+We can think of $h(\theta)$ as the curve on the x-y plane and it swept vertically according to the scale $m_1(\phi)$ and vertical sweeping motion $m_2(\phi)$. Similarly, it can auto be thought of as the curve perpendicular to the x-y plane sweeping around the z-axis according to $h(\theta)$ as shown in the following figure.
 {{< figure align=center src="/posts/superquadric/spherical_product.gif" width="60%" title="Spherical Product">}}
 
 
@@ -129,13 +126,13 @@ The limitation of superquadrics lies in its symmetry property, which can be seen
 
 ## Bézier Curve
 
-There is a wonderful tutorial about [**Bézier curve**](https://pomax.github.io/bézierinfo/) by Pomax. It provides a comprehensive introduction and interactive tools for the Bézier curve. Here I will briefly discuss the parts that are relevant to extended superquadrics.
-The following polynomial specifies Bézier Curve of degree n function.
-$$ f(t) = \sum_{i=0}^n P_{i}\:B_i^n(t)$$
-$B_i^n(t) = {n\choose i} t^i\:(1-t)^{n-i}$ is the [**Bernstein polynomial**](https://mathworld.wolfram.com/BernsteinPolynomial.html) of degree $n$. The degree of the polynomial is determined by the number of control points used. Each control point is specified by its $(x,y)$ coordinates in the $(x,y)$-plane. 
+There is a wonderful tutorial about the [**Bézier curve**](https://pomax.github.io/bézierinfo/) by Pomax. It provides a comprehensive introduction and interactive tools for the Bézier curve. Here I will briefly discuss the parts that are relevant to extended superquadrics.
+The following polynomial specifies the Bézier Curve of degree n function.
+$$ f(t) = \sum_{i=0}^n P_{i}B_i^n(t)$$
+$B_i^n(t) = {n\choose i} t^i(1-t)^{n-i}$ is the [**Bernstein polynomial**](https://mathworld.wolfram.com/BernsteinPolynomial.html) of degree $n$. The degree of the polynomial is determined by the number of control points used. Each control point is specified by its $(x,y)$ coordinates in the $(x,y)$-plane. 
 For an $n^{th}$ degree Bézier curve, there are a total of $n+1$ control points.
 
-For each value of $0\leq t\leq 1$, the Bernstein polynomial adds up to 1, $\sum_i^n B_i^n(t) = 1$. So the Bézier curve can be interpreted as a weighted sum of the control points $P_i$, where the weights vary as $t$ ranges from zero to one. This is the key property that used to control the shape of extended superquadric. 
+For each value of $0\leq t\leq 1$, the Bernstein polynomial adds up to 1, $\sum_i^n B_i^n(t) = 1$. So the Bézier curve can be interpreted as a weighted sum of the control points $P_i$, where the weights vary as $t$ ranges from zero to one. This is the key property that is used to control the shape of the extended superquadric. 
 
 ## Bézier Curves As Used in Extended Superquadrics
 
@@ -143,8 +140,8 @@ The extended superquadric is defined by the following inside-outside function
 $$    \left(\left|\frac{x}{a_1}\right|^{\frac{2}{f_2(\theta)}}+ \left|\frac{y}{a_2}\right|^\frac{2}{f_2(\theta)}\right)^\frac{f_2(\theta)}{f_1(\phi)}+\left|\frac{z}{a_3}\right|^\frac{2}{f_1(\phi)}=1. $$
 
 The two Bézier curves used are given by
-$$ f_1(\phi) = \sum_{i=0}^nP_{1,i}\:{n\choose i} t^i\: (1-t)^{n-i},\qquad t = \frac{\phi + \frac{\pi}{2}}{\pi} ,$$
-$$ f_2(\theta) = \sum_{i=0}^nP_{2,i}\:{n\choose i} t^i\: (1-t)^{n-i},\qquad t = \frac{\theta + \pi}{2\pi} ,$$
+$$ f_1(\phi) = \sum_{i=0}^nP_{1,i}{n\choose i} t^i (1-t)^{n-i},\qquad t = \frac{\phi + \frac{\pi}{2}}{\pi} ,$$
+$$ f_2(\theta) = \sum_{i=0}^nP_{2,i}{n\choose i} t^i (1-t)^{n-i},\qquad t = \frac{\theta + \pi}{2\pi} ,$$
 where 
 $$ \phi = \arctan\frac{z}{\sqrt{x^2+y^2}}, $$
 $$ \theta = \arctan(\frac{y}{x}). $$
@@ -179,7 +176,7 @@ The smoothness property of Bézier curves means that modifying a single control 
 | ![ex-superquadric](/posts/superquadric/ex2.png) | ![ex-superquadric-control](/posts/superquadric/ex2_control.png) |
 |:---:|:---:|
 
-The following images shows the deformation of superquadric by using piecewise Bézier curve.
+The following images show the deformation of the superquadric by using a piecewise Bézier curve.
 
 | ![ex-superquadric](/posts/superquadric/ex3.gif) | ![ex-superquadric-control](/posts/superquadric/ex3_control.gif) |
 |:---:|:---:|
@@ -190,7 +187,7 @@ The following images shows the deformation of superquadric by using piecewise B�
 
 ## Example: BB8
 
-Here is an example of extended superquadric model. A untextured BB8 model that is composed of 6 extended superquadrics.
+Here is an example of an extended superquadric model. An untextured BB8 model that is composed of 6 extended superquadrics.
 
 {{< figure align=center src="/posts/superquadric/bb8.gif" width="60%" title="A 3D model of BB-8 made by extended superquadrics">}}
 
