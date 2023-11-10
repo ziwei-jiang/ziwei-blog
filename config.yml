@@ -79,8 +79,6 @@ params:
       url: "https://scholar.google.com/citations?user=FFXwkroAAAAJ&hl=en"
     - name: github
       url: "https://github.com/ziwei-jiang"
-    # - name: linkedin
-    #   url: "https://www.linkedin.com/in/ziwei-jiang-b46656112/"
     - name: twitter
       url: "https://twitter.com/ziwei_jiang_"
     - name: instagram
