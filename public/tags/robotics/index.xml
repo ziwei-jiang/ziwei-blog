@@ -4,35 +4,37 @@
     <title>Robotics on Ziwei&#39;s Site</title>
     <link>https://ziwei-jiang.github.io/tags/robotics/</link>
     <description>Recent content in Robotics on Ziwei&#39;s Site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Jan 2017 11:30:03 +0000</lastBuildDate><atom:link href="https://ziwei-jiang.github.io/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Jul 2018 11:30:03 +0000</lastBuildDate>
+    <atom:link href="https://ziwei-jiang.github.io/tags/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Robotics Specialization: Estimation and Learning</title>
+      <link>https://ziwei-jiang.github.io/projects/robotics_specialization/estimation_learning/</link>
+      <pubDate>Fri, 13 Jul 2018 11:30:03 +0000</pubDate>
+      <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/estimation_learning/</guid>
+      <description>Learning and estimation for robots </description>
+    </item>
     <item>
       <title>Robotics Specialization: Perception</title>
       <link>https://ziwei-jiang.github.io/projects/robotics_specialization/perception/</link>
       <pubDate>Sun, 15 Jan 2017 11:30:03 +0000</pubDate>
-      
       <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/perception/</guid>
       <description>Camera model and computer vision for robots </description>
     </item>
-    
     <item>
       <title>Robotics Specialization: Computational Motion Planning</title>
       <link>https://ziwei-jiang.github.io/projects/robotics_specialization/computational_motion_planning/</link>
       <pubDate>Tue, 15 Mar 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/computational_motion_planning/</guid>
       <description>Motion and path planning for robots. </description>
     </item>
-    
     <item>
       <title>Robotics Specialization: Aerial Robotics</title>
       <link>https://ziwei-jiang.github.io/projects/robotics_specialization/aerial_robotics/</link>
       <pubDate>Mon, 15 Feb 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/aerial_robotics/</guid>
       <description>Controller design for quadrotors.  </description>
     </item>
-    
   </channel>
 </rss>

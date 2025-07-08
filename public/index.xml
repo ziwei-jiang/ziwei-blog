@@ -4,62 +4,450 @@
     <title>Ziwei&#39;s Site</title>
     <link>https://ziwei-jiang.github.io/</link>
     <description>Recent content on Ziwei&#39;s Site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Jul 2023 11:30:03 +0000</lastBuildDate><atom:link href="https://ziwei-jiang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ziwei-jiang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Q-Learning.md</title>
+      <link>https://ziwei-jiang.github.io/notes/q-learning/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://ziwei-jiang.github.io/notes/q-learning/</guid>
+      <description>&lt;p&gt;Try the &lt;a href=&#34;https://ziwei-jiang.github.io/frozen_lake_game/&#34;&gt;Frozen Lake Game&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Conditional Common Entropy for Instrumental Variable Testing and Partial Identification</title>
+      <link>https://ziwei-jiang.github.io/projects/conditional_common_entropy/conditional_common_entropy/</link>
+      <pubDate>Thu, 18 Jul 2024 11:30:03 +0000</pubDate>
+      <guid>https://ziwei-jiang.github.io/projects/conditional_common_entropy/conditional_common_entropy/</guid>
+      <description>&lt;p&gt; &lt;/p&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;Instrumental variables (IVs) are widely used for estimating causal effects. There are two main challenges when using instrumental variables. First of all, using IV without additional assumptions such as linearity, the causal effect may still not be identifiable. Second, when selecting an IV, the validity of the selected IV is typically not testable since the causal graph is not identifiable from observational data. In this work, we propose a method for bounding the causal effect with instrumental variables under weak confounding. In addition, we present a novel criterion to falsify the IV with side information about the confounder.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Approximate Causal Effect Identification under Weak Confounding</title>
       <link>https://ziwei-jiang.github.io/projects/causal_effect_under_weak_confounding/weak_confounding/</link>
       <pubDate>Tue, 18 Jul 2023 11:30:03 +0000</pubDate>
-      
       <guid>https://ziwei-jiang.github.io/projects/causal_effect_under_weak_confounding/weak_confounding/</guid>
-      <description>Overview In this project, We aimed to investigate the relationship between the influence of unobserved confounders and the deviation of spurious correlation from the true causal effect. This is similar to the concept of sensitivity analysis in the causal effect estimation. We utilized entropy as a measure to quantify the strength of the confounder and developed an algorithm to estimate bounds for the causal effect based on the observational distribution and the strength of confounders.</description>
+      <description>&lt;p&gt; &lt;/p&gt;
+&lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
+&lt;p&gt;In this project, we aimed to investigate the relationship between the influence of unobserved confounders and the deviation of spurious correlation from the true causal effect. This is similar to the concept of sensitivity analysis in the causal effect estimation. We utilized entropy as a measure to quantify the strength of the confounder and developed an algorithm to estimate bounds for the causal effect based on the observational distribution and the strength of confounders.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Extended Superquadric</title>
-      <link>https://ziwei-jiang.github.io/posts/superquadric/superquadric/</link>
+      <link>https://ziwei-jiang.github.io/projects/superquadric/superquadric/</link>
       <pubDate>Mon, 07 Feb 2022 03:14:03 -0500</pubDate>
-      
-      <guid>https://ziwei-jiang.github.io/posts/superquadric/superquadric/</guid>
+      <guid>https://ziwei-jiang.github.io/projects/superquadric/superquadric/</guid>
       <description>A brief introduction to extended superquadrics.</description>
     </item>
-    
+    <item>
+      <title>Robotics Specialization: Estimation and Learning</title>
+      <link>https://ziwei-jiang.github.io/projects/robotics_specialization/estimation_learning/</link>
+      <pubDate>Fri, 13 Jul 2018 11:30:03 +0000</pubDate>
+      <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/estimation_learning/</guid>
+      <description>Learning and estimation for robots </description>
+    </item>
     <item>
       <title>Robotics Specialization: Perception</title>
       <link>https://ziwei-jiang.github.io/projects/robotics_specialization/perception/</link>
       <pubDate>Sun, 15 Jan 2017 11:30:03 +0000</pubDate>
-      
       <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/perception/</guid>
       <description>Camera model and computer vision for robots </description>
     </item>
-    
     <item>
       <title>Robotics Specialization: Computational Motion Planning</title>
       <link>https://ziwei-jiang.github.io/projects/robotics_specialization/computational_motion_planning/</link>
       <pubDate>Tue, 15 Mar 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/computational_motion_planning/</guid>
       <description>Motion and path planning for robots. </description>
     </item>
-    
     <item>
       <title>Robotics Specialization: Aerial Robotics</title>
       <link>https://ziwei-jiang.github.io/projects/robotics_specialization/aerial_robotics/</link>
       <pubDate>Mon, 15 Feb 2016 11:30:03 +0000</pubDate>
-      
       <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/aerial_robotics/</guid>
       <description>Controller design for quadrotors.  </description>
     </item>
-    
     <item>
-      <title>Publications</title>
-      <link>https://ziwei-jiang.github.io/publications/</link>
+      <title>Notes</title>
+      <link>https://ziwei-jiang.github.io/notes/coming_soon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://ziwei-jiang.github.io/publications/</guid>
+      <guid>https://ziwei-jiang.github.io/notes/coming_soon/</guid>
       <description></description>
     </item>
-    
+    <item>
+      <title></title>
+      <link>https://ziwei-jiang.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ziwei-jiang.github.io/about/</guid>
+      <description>&lt;style&gt;
+  /* only this page’s paragraphs will be left-aligned */
+  main p {
+    text-align: left !important;
+    hyphens: none;
+  }
+  main h4 {
+    font-size: 1.25rem !important; /* adjust 1.25rem to your desired size */
+    /* optionally tweak line-height or margin here too */
+  }
+&lt;/style&gt;
+
+
+
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+  &lt;title&gt;About&lt;/title&gt;
+  &lt;meta charset=&#34;UTF-8&#34;&gt;
+  &lt;meta name=&#34;viewport&#34; content=&#34;width=device-width, initial-scale=1.0&#34;&gt;
+  &lt;title&gt;Your Page Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!--   &lt;h1&gt;Education&lt;/h1&gt;
+  &lt;h3&gt;Johns Hopkins University&lt;/h3&gt;
+  &lt;p&gt;Ph.D. in Computer Science&lt;/p&gt;
+  &lt;h3&gt;Purdue University&lt;/h3&gt;
+  2025 M.S. in Computer Engineering 
+  &lt;h3&gt;Southeast Missouri State University&lt;/h3&gt;
+  2017 B.S. in Engineering Physics: Mechanical Application and Computer Application (Double Majors)
+ --&gt;
+  &lt;h1&gt;Education&lt;/h1&gt;
+  &lt;h4&gt;Johns Hopkins University&lt;/h4&gt;
+  &lt;ul&gt;&lt;b&gt;Starting Fall 2025&lt;/b&gt; Ph.D.  in Computer Science&lt;/ul&gt;
+  &lt;h4&gt;Purdue University&lt;/h4&gt;
+  &lt;ul&gt;&lt;b&gt;2025&lt;/b&gt; M.S. in Computer Engineering&lt;/ul&gt;
+  &lt;ul&gt;Research Area: Computer Vision, Deep Learning, Causal Inference&lt;/ul&gt;
+  &lt;h4&gt;Southeast Missouri State University&lt;/h4&gt;
+  &lt;ul&gt;&lt;b&gt;2017&lt;/b&gt; B.S. in Engineering Physics: Mechanical Application and Computer Application (Double Majors)&lt;/ul&gt;
+  &lt;ul&gt;Interested Area: Robotics, Computer Vision&lt;/ul&gt;
+  &lt;h1&gt;Academic Activities&lt;/h1&gt;
+  &lt;h3&gt;Conference Reviewer&lt;/h3&gt;
+  NeurIPS(2023,2025), AAAI(2024-2025), CLeaR(2024-2025), ICML(2024-2025), UAI(2024-2025), ICLR(2024-2025), AISTATS(2024-2025)
+
+  &lt;h3&gt; Teaching &lt;/h3&gt;
+  &lt;ul&gt; 
+    &lt;li&gt;&lt;p style=&#34;margin-bottom: 0px;&#34;&gt;&lt;b&gt;Graduate Teaching Assistant: &lt;/b&gt; ECE382 Feedback System Analysis And Design&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://ziwei-jiang.github.io/frozen_lake_game/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ziwei-jiang.github.io/frozen_lake_game/</guid>
+      <description>&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+&lt;meta charset=&#34;UTF-8&#34;&gt;
+&lt;title&gt;Frozen Lake Demo – Stats + Average &amp; Goal Stay&lt;/title&gt;
+&lt;style&gt;
+  body{margin:0;display:flex;flex-direction:column;align-items:center;
+       font-family:sans-serif;background:#e7f4ff;height:100vh;overflow:hidden;}
+  #setup{margin-top:40px}
+  #setup input[type=&#34;number&#34;]{width:4rem;text-align:center}
+  #setup label{margin-left:8px}
+  canvas{border:2px solid #333;image-rendering:pixelated;margin-top:10px}
+  #msg,#steps,#stats,#avg{margin-top:6px}
+
+  /* Make sure every element here uses border-box sizing */
+  *,*::before,*::after{box-sizing:border-box;}
+
+  /* Basic page reset */
+  body{
+    margin:0;
+    font-family:sans-serif;
+    background:#e7f4ff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-height:100vh;
+  }
+
+  /* Control bar layout */
+  #setup{
+    margin-top:40px;
+    display:flex;
+    flex-wrap:wrap;
+    column-gap:1rem;
+    row-gap:0.5rem;
+    align-items:center;
+    font-size:1rem;
+    line-height:1.2;
+  }
+  #setup label{
+    display:flex;
+    align-items:center;
+    gap:0.35rem;
+  }
+  #setup input[type=&#34;number&#34;]{
+    width:4rem;
+    padding:2px 4px;
+    text-align:center;
+    font:inherit;
+  }
+  #setup button{
+    cursor:pointer;
+    padding:4px 10px;
+    font:inherit;
+    border:1px solid #333;
+    background:#fff;
+    border-radius:4px;
+  }
+
+  /* Canvas and text below */
+  canvas{border:2px solid #333; image-rendering:pixelated; margin-top:10px;}
+  #msg,#steps,#stats,#avg{margin-top:6px;}
+  /* Keep the numeric spinners visible even when the box is not focussed
+   (works for Chrome, Edge, Safari; Firefox shows them by default) */
+  #setup input[type=&#34;number&#34;]::-webkit-inner-spin-button,
+  #setup input[type=&#34;number&#34;]::-webkit-outer-spin-button{
+  -webkit-appearance: inner-spin-button !important;  /* ensure they exist   */
+  opacity: 1 !important;                             /* keep them opaque    */
+}
+
+&lt;/style&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id=&#34;setup&#34;&gt;
+  &lt;label&gt;Size (N×N):
+    &lt;input id=&#34;size&#34; type=&#34;number&#34; min=&#34;4&#34; max=&#34;12&#34; value=&#34;4&#34;&gt;
+  &lt;/label&gt;
+
+  &lt;label&gt;Holes p:
+    &lt;input id=&#34;prob&#34; type=&#34;number&#34; min=&#34;0&#34; max=&#34;0.5&#34; step=&#34;0.05&#34; value=&#34;0.20&#34;&gt;
+  &lt;/label&gt;
+
+  &lt;label&gt;
+    &lt;input id=&#34;slipChk&#34; type=&#34;checkbox&#34; checked&gt; Slippery
+  &lt;/label&gt;
+
+  &lt;!-- tabindex=&#34;-1&#34; means it won’t grab focus after click --&gt;
+  &lt;button id=&#34;startBtn&#34; tabindex=&#34;-1&#34;&gt;Start Game&lt;/button&gt;
+&lt;/div&gt;
+
+
+&lt;canvas id=&#34;c&#34;&gt;&lt;/canvas&gt;
+&lt;div id=&#34;msg&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;steps&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;stats&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;avg&#34;&gt;&lt;/div&gt;
+
+&lt;script&gt;
+/* ╭─────────────────────────────────────────────╮
+   │ Disable typing in the two numeric boxes      │
+   │ – but still let ArrowUp/ArrowDown &amp; spinners │
+   ╰─────────────────────────────────────────────╯ */
+const sizeInput  = document.getElementById(&#34;size&#34;);
+const probInput  = document.getElementById(&#34;prob&#34;);
+[sizeInput, probInput].forEach(inp =&gt; {
+  /* block most keys */
+  inp.addEventListener(&#34;keydown&#34;, e =&gt; {
+    const ok = [&#34;ArrowUp&#34;,&#34;ArrowDown&#34;,&#34;Tab&#34;,&#34;Shift&#34;,&#34;Alt&#34;,&#34;Control&#34;,&#34;Meta&#34;,
+                &#34;Home&#34;,&#34;End&#34;];          // allow navigation &amp; arrows
+    if (!ok.includes(e.key)) e.preventDefault();
+  });
+  /* prevent pasting / dragging text in */
+  [&#34;paste&#34;,&#34;drop&#34;].forEach(evt =&gt;
+    inp.addEventListener(evt, e =&gt; e.preventDefault())
+  );
+});
+
+/* -------- 1.  SPRITE LOADER -------------------------------------- */
+const SPRITES={}, TO_LOAD=[
+  [&#34;elf_up&#34;       ,&#34;elf_up.png&#34;       ],
+  [&#34;elf_down&#34;     , &#34;elf_down.png&#34;    ],
+  [&#34;elf_left&#34;     , &#34;elf_left.png&#34;    ],
+  [&#34;elf_right&#34;    , &#34;elf_right.png&#34;   ],
+  [&#34;ice&#34;          , &#34;ice.png&#34;         ],
+  [&#34;hole&#34;         , &#34;hole.png&#34;        ],
+  [&#34;cracked_hole&#34; , &#34;cracked_hole.png&#34;],
+  [&#34;goal&#34;         , &#34;goal.png&#34;        ],
+  [&#34;stool&#34;        , &#34;stool.png&#34;       ]
+];
+let READY=false;
+function loadSprites(cb){
+  let left=TO_LOAD.length;
+  TO_LOAD.forEach(([k,src])=&gt;{
+    const img=new Image(); img.src=src;
+    img.onload=()=&gt;{if(--left===0){READY=true;cb();}};
+    SPRITES[k]=img;
+  });
+}
+
+/* -------- 2.  GLOBAL STATE --------------------------------------- */
+const SLIP_PROB=0.8;
+let N=4, MAP=[], TILE=80, slippery=true;
+let canvas=document.getElementById(&#34;c&#34;), ctx=canvas.getContext(&#34;2d&#34;);
+
+const msgEl  =document.getElementById(&#34;msg&#34;),
+      stepEl =document.getElementById(&#34;steps&#34;),
+      statEl =document.getElementById(&#34;stats&#34;),
+      avgEl  =document.getElementById(&#34;avg&#34;);
+
+let agent={}, splash=null, steps=0;
+let wins=0, episodes=0, totalWinSteps=0;          // NEW → totals for average
+
+const DIRS={
+  ArrowUp   :{dr:-1,dc: 0,left:&#34;ArrowLeft&#34;, right:&#34;ArrowRight&#34;, sprite:&#34;elf_up&#34;},
+  ArrowDown :{dr: 1,dc: 0,left:&#34;ArrowRight&#34;,right:&#34;ArrowLeft&#34;,  sprite:&#34;elf_down&#34;},
+  ArrowLeft :{dr: 0,dc:-1,left:&#34;ArrowDown&#34;, right:&#34;ArrowUp&#34;,    sprite:&#34;elf_left&#34;},
+  ArrowRight:{dr: 0,dc: 1,left:&#34;ArrowUp&#34;,   right:&#34;ArrowDown&#34;,  sprite:&#34;elf_right&#34;},
+};
+
+/* -------- 3.  MAP GENERATION ------------------------------------- */
+function genMap(n,p=0.2,tries=200){
+  const dirs=[[1,0],[-1,0],[0,1],[0,-1]];
+  const solvable=g=&gt;{
+    const q=[[0,0]], seen=new Set([&#34;0,0&#34;]);
+    while(q.length){
+      const [r,c]=q.shift();
+      if(r===n-1&amp;&amp;c===n-1) return true;
+      for(const[d1,d2]of dirs){
+        const nr=r+d1,nc=c+d2,k=`${nr},${nc}`;
+        if(nr&gt;=0&amp;&amp;nc&gt;=0&amp;&amp;nr&lt;n&amp;&amp;nc&lt;n&amp;&amp;g[nr][nc]!==&#34;H&#34;&amp;&amp;!seen.has(k)){
+          seen.add(k); q.push([nr,nc]);
+        }
+      }
+    }
+    return false;
+  };
+  for(let t=0;t&lt;tries;t++){
+    const g=Array.from({length:n},_=&gt;Array.from({length:n},_=&gt;&#34;F&#34;));
+    for(let r=0;r&lt;n;r++)for(let c=0;c&lt;n;c++){
+      if((r===0&amp;&amp;c===0)||(r===n-1&amp;&amp;c===n-1)) continue;
+      g[r][c]=Math.random()&lt;p?&#34;H&#34;:&#34;F&#34;;
+    }
+    g[0][0]=&#34;S&#34;; g[n-1][n-1]=&#34;G&#34;;
+    if(solvable(g)) return g;
+  }
+  const g=Array.from({length:n},_=&gt;Array.from({length:n},_=&gt;&#34;F&#34;));
+  g[0][0]=&#34;S&#34;; g[n-1][n-1]=&#34;G&#34;; return g;
+}
+
+/* -------- 4.  RENDERING ------------------------------------------ */
+function fitCanvas(){
+  TILE=Math.floor(Math.min(innerWidth,innerHeight-180)/N);
+  TILE=Math.max(32,Math.min(96,TILE));
+  canvas.width=TILE*N; canvas.height=TILE*N;
+}
+function drawTile(img,r,c){ctx.drawImage(img,c*TILE,r*TILE,TILE,TILE);}
+function drawBoard(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  for(let r=0;r&lt;N;r++)for(let c=0;c&lt;N;c++){
+    const t=MAP[r][c];
+    if(t===&#34;H&#34;){
+      if(splash&amp;&amp;splash.r===r&amp;&amp;splash.c===c&amp;&amp;!agent.alive)
+        drawTile(SPRITES.cracked_hole,r,c);
+      else drawTile(SPRITES.hole,r,c);
+    }else{
+      drawTile(SPRITES.ice,r,c);
+      if(t===&#34;G&#34;) drawTile(SPRITES.goal,r,c);
+      if(t===&#34;S&#34;) drawTile(SPRITES.stool,r ,c);
+    }
+  }
+  /* draw elf if alive **OR** already won */
+  if(agent.alive || agent.won) drawTile(SPRITES[agent.dir],agent.r,agent.c);
+}
+
+/* -------- 5.  UI UPDATERS ---------------------------------------- */
+function updateSteps(){ stepEl.innerText=`Steps: ${steps}`; }
+function updateStats(){ statEl.innerText=`Stats: ${wins} / ${episodes}`; }
+function updateAvg(){
+  avgEl.innerText = wins
+    ? `Avg steps (wins): ${(totalWinSteps/wins).toFixed(1)}`
+    : `Avg steps (wins): –`;
+}
+
+/* -------- 6.  GAME LOGIC ----------------------------------------- */
+function newGame(n,p,slip){
+  N=n; slippery=slip; splash=null;
+  MAP=genMap(N,p);
+  agent={r:0,c:0,dir:&#34;elf_down&#34;,alive:true,won:false};
+  steps=0; fitCanvas(); drawBoard();
+  msgEl.innerText=&#34;Reach the 🎁 without falling in 💧. Use ↑←↓→&#34;;
+  updateSteps(); updateStats(); updateAvg();
+}
+function step(key){
+  if(!DIRS[key]||!agent.alive) return;
+  if(!slippery){ move(key); return; }
+  let final=key, roll=Math.random();
+  if(roll&gt;SLIP_PROB){
+    final = roll &lt; SLIP_PROB + (1-SLIP_PROB)/2 ? DIRS[key].left : DIRS[key].right;
+  }
+  move(final);
+}
+function move(key){
+  const {dr,dc,sprite}=DIRS[key];
+  const nr=agent.r+dr, nc=agent.c+dc;
+  if(nr&lt;0||nc&lt;0||nr&gt;=N||nc&gt;=N) return;
+  steps++; updateSteps();
+  agent.r=nr; agent.c=nc; agent.dir=sprite;
+  const t=MAP[nr][nc];
+  if(t===&#34;H&#34;||t===&#34;G&#34;){
+    splash = t===&#34;H&#34; ? {r:nr,c:nc} : null;
+    agent.alive=false; agent.won=(t===&#34;G&#34;);
+    episodes++; if(agent.won){ wins++; totalWinSteps+=steps; }
+    updateStats(); updateAvg();
+    msgEl.innerText = agent.won
+      ? &#34;🎉 You reached the gift! – press any key to play again&#34;
+      : &#34;💧 You fell in! – press any key to play again&#34;;
+  }
+  drawBoard();
+}
+
+/* -------- 7.  EVENT HANDLERS ------------------------------------- */
+document.getElementById(&#34;startBtn&#34;).onclick=()=&gt;{
+  if(!READY) return;
+  /* reset cumulative counters */
+  wins=episodes=totalWinSteps=0;
+  const n=Math.max(4,Math.min(12,parseInt(size.value)||4));
+  const p=Math.max(0,Math.min(0.5,parseFloat(prob.value)||0.2));
+  const slip=document.getElementById(&#34;slipChk&#34;).checked;
+  newGame(n,p,slip);
+  /* prevent accidental re-trigger on Space / Enter */
+  document.getElementById(&#34;startBtn&#34;).blur();   // remove focus
+};
+window.addEventListener(&#34;keydown&#34;,e=&gt;{
+  if(!READY) return;
+  if(!agent.alive){           // ended episode → start next one
+    const p=parseFloat(prob.value)||0.2;
+    const slip=document.getElementById(&#34;slipChk&#34;).checked;
+    newGame(N,p,slip);
+  }
+  step(e.key);
+});
+window.addEventListener(&#34;resize&#34;,fitCanvas);
+
+/* -------- 8.  BOOTSTRAP ------------------------------------------ */
+loadSprites(()=&gt;newGame(4,0.20,true));
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://ziwei-jiang.github.io/publications/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://ziwei-jiang.github.io/publications/</guid>
+      <description>&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Publications&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Publications&lt;/h1&gt;
+    &lt;!-- &lt;h2&gt; Conference &lt;/h2&gt; --&gt;
+  &lt;ol&gt;
+    &lt;li&gt;
+      &lt;p style=&#34;margin-bottom: 0px;&#34;&gt;&lt;a href=&#34;https://proceedings.mlr.press/v235/jiang24b.html&#34;&gt;&lt;b&gt;Conditional Common Entropy for Instrumental Variable Testing and Partial Identification &lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+      &lt;p style=&#34;margin-bottom: 10px;&#34;&gt;Ziwei Jiang, Murat Kocaoglu, ICML 2024.&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p style=&#34;margin-bottom: 0px;&#34;&gt;&lt;a href=&#34;https://proceedings.mlr.press/v202/jiang23h&#34;&gt;&lt;b&gt;Approximate Causal Effect Identification under Weak Confounding &lt;/b&gt;&lt;/a&gt;&lt;/p&gt;
+      &lt;p style=&#34;margin-bottom: 0px;&#34;&gt;Ziwei Jiang, Lai Wei, Murat Kocaoglu, ICML 2023.&lt;/p&gt;
+      &lt;p&gt; &lt;a href=&#34;https://arxiv.org/pdf/2306.13242.pdf&#34;&gt;[arXiv]&lt;/a&gt; &lt;a href=&#34;https://github.com/ziwei-jiang/Approximate-Causal-Effect-Identification-under-Weak-Confounding&#34;&gt; [code] &lt;/a&gt; &lt;a href=&#34;https://slideslive.com/39003243/approximate-causal-effect-identification-under-weak-confounding?ref=search-presentations-Approximate+Causal+Effect+Identification+under+Weak+Confounding&#34;&gt; [video] &lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;</description>
+    </item>
   </channel>
 </rss>

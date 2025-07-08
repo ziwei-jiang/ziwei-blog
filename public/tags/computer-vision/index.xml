@@ -4,26 +4,16 @@
     <title>Computer Vision on Ziwei&#39;s Site</title>
     <link>https://ziwei-jiang.github.io/tags/computer-vision/</link>
     <description>Recent content in Computer Vision on Ziwei&#39;s Site</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Feb 2022 03:14:03 -0500</lastBuildDate><atom:link href="https://ziwei-jiang.github.io/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Feb 2022 03:14:03 -0500</lastBuildDate>
+    <atom:link href="https://ziwei-jiang.github.io/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Extended Superquadric</title>
-      <link>https://ziwei-jiang.github.io/posts/superquadric/superquadric/</link>
+      <link>https://ziwei-jiang.github.io/projects/superquadric/superquadric/</link>
       <pubDate>Mon, 07 Feb 2022 03:14:03 -0500</pubDate>
-      
-      <guid>https://ziwei-jiang.github.io/posts/superquadric/superquadric/</guid>
+      <guid>https://ziwei-jiang.github.io/projects/superquadric/superquadric/</guid>
       <description>A brief introduction to extended superquadrics.</description>
     </item>
-    
-    <item>
-      <title>Robotics Specialization: Perception</title>
-      <link>https://ziwei-jiang.github.io/projects/robotics_specialization/perception/</link>
-      <pubDate>Sun, 15 Jan 2017 11:30:03 +0000</pubDate>
-      
-      <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/perception/</guid>
-      <description>Camera model and computer vision for robots </description>
-    </item>
-    
   </channel>
 </rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Reinforcement Learning on Ziwei&#39;s Site</title>
+    <link>https://ziwei-jiang.github.io/tags/reinforcement-learning/</link>
+    <description>Recent content in Reinforcement Learning on Ziwei&#39;s Site</description>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ziwei-jiang.github.io/tags/reinforcement-learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Q-Learning.md</title>
+      <link>https://ziwei-jiang.github.io/notes/q-learning/</link>
+      <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>https://ziwei-jiang.github.io/notes/q-learning/</guid>
+      <description>&lt;p&gt;Try the &lt;a href=&#34;https://ziwei-jiang.github.io/frozen_lake_game/&#34;&gt;Frozen Lake Game&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
