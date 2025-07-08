@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Causality on Ziwei&#39;s Site</title>
-    <link>https://ziwei-jiang.github.io/tags/causality/</link>
+    <link>http://localhost:1313/tags/causality/</link>
     <description>Recent content in Causality on Ziwei&#39;s Site</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Jul 2024 11:30:03 +0000</lastBuildDate>
-    <atom:link href="https://ziwei-jiang.github.io/tags/causality/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/causality/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conditional Common Entropy for Instrumental Variable Testing and Partial Identification</title>
-      <link>https://ziwei-jiang.github.io/projects/conditional_common_entropy/conditional_common_entropy/</link>
+      <link>http://localhost:1313/projects/conditional_common_entropy/conditional_common_entropy/</link>
       <pubDate>Thu, 18 Jul 2024 11:30:03 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/projects/conditional_common_entropy/conditional_common_entropy/</guid>
+      <guid>http://localhost:1313/projects/conditional_common_entropy/conditional_common_entropy/</guid>
       <description>&lt;p&gt; &lt;/p&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;p&gt;Instrumental variables (IVs) are widely used for estimating causal effects. There are two main challenges when using instrumental variables. First of all, using IV without additional assumptions such as linearity, the causal effect may still not be identifiable. Second, when selecting an IV, the validity of the selected IV is typically not testable since the causal graph is not identifiable from observational data. In this work, we propose a method for bounding the causal effect with instrumental variables under weak confounding. In addition, we present a novel criterion to falsify the IV with side information about the confounder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Approximate Causal Effect Identification under Weak Confounding</title>
-      <link>https://ziwei-jiang.github.io/projects/causal_effect_under_weak_confounding/weak_confounding/</link>
+      <link>http://localhost:1313/projects/causal_effect_under_weak_confounding/weak_confounding/</link>
       <pubDate>Tue, 18 Jul 2023 11:30:03 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/projects/causal_effect_under_weak_confounding/weak_confounding/</guid>
+      <guid>http://localhost:1313/projects/causal_effect_under_weak_confounding/weak_confounding/</guid>
       <description>&lt;p&gt; &lt;/p&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;p&gt;In this project, we aimed to investigate the relationship between the influence of unobserved confounders and the deviation of spurious correlation from the true causal effect. This is similar to the concept of sensitivity analysis in the causal effect estimation. We utilized entropy as a measure to quantify the strength of the confounder and developed an algorithm to estimate bounds for the causal effect based on the observational distribution and the strength of confounders.&lt;/p&gt;</description>

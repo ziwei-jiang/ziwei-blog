@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Computer Vision on Ziwei&#39;s Site</title>
-    <link>https://ziwei-jiang.github.io/tags/computer-vision/</link>
+    <link>http://localhost:1313/tags/computer-vision/</link>
     <description>Recent content in Computer Vision on Ziwei&#39;s Site</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Feb 2022 03:14:03 -0500</lastBuildDate>
-    <atom:link href="https://ziwei-jiang.github.io/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/computer-vision/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Extended Superquadric</title>
-      <link>https://ziwei-jiang.github.io/projects/superquadric/superquadric/</link>
+      <link>http://localhost:1313/projects/superquadric/superquadric/</link>
       <pubDate>Mon, 07 Feb 2022 03:14:03 -0500</pubDate>
-      <guid>https://ziwei-jiang.github.io/projects/superquadric/superquadric/</guid>
+      <guid>http://localhost:1313/projects/superquadric/superquadric/</guid>
       <description>A brief introduction to extended superquadrics.</description>
     </item>
   </channel>

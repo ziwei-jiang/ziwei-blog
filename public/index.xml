@@ -2,84 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Ziwei&#39;s Site</title>
-    <link>https://ziwei-jiang.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Ziwei&#39;s Site</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 07 Jul 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://ziwei-jiang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Q-Learning.md</title>
-      <link>https://ziwei-jiang.github.io/notes/q-learning/</link>
+      <link>http://localhost:1313/notes/q-learning/</link>
       <pubDate>Mon, 07 Jul 2025 00:00:00 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/notes/q-learning/</guid>
-      <description>&lt;p&gt;Try the &lt;a href=&#34;https://ziwei-jiang.github.io/frozen_lake_game/&#34;&gt;Frozen Lake Game&lt;/a&gt;&lt;/p&gt;</description>
+      <guid>http://localhost:1313/notes/q-learning/</guid>
+      <description>&lt;p&gt;Try the &lt;a href=&#34;http://localhost:1313/frozen_lake_game/&#34;&gt;Frozen Lake Game&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Conditional Common Entropy for Instrumental Variable Testing and Partial Identification</title>
-      <link>https://ziwei-jiang.github.io/projects/conditional_common_entropy/conditional_common_entropy/</link>
+      <link>http://localhost:1313/projects/conditional_common_entropy/conditional_common_entropy/</link>
       <pubDate>Thu, 18 Jul 2024 11:30:03 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/projects/conditional_common_entropy/conditional_common_entropy/</guid>
+      <guid>http://localhost:1313/projects/conditional_common_entropy/conditional_common_entropy/</guid>
       <description>&lt;p&gt; &lt;/p&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;p&gt;Instrumental variables (IVs) are widely used for estimating causal effects. There are two main challenges when using instrumental variables. First of all, using IV without additional assumptions such as linearity, the causal effect may still not be identifiable. Second, when selecting an IV, the validity of the selected IV is typically not testable since the causal graph is not identifiable from observational data. In this work, we propose a method for bounding the causal effect with instrumental variables under weak confounding. In addition, we present a novel criterion to falsify the IV with side information about the confounder.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Approximate Causal Effect Identification under Weak Confounding</title>
-      <link>https://ziwei-jiang.github.io/projects/causal_effect_under_weak_confounding/weak_confounding/</link>
+      <link>http://localhost:1313/projects/causal_effect_under_weak_confounding/weak_confounding/</link>
       <pubDate>Tue, 18 Jul 2023 11:30:03 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/projects/causal_effect_under_weak_confounding/weak_confounding/</guid>
+      <guid>http://localhost:1313/projects/causal_effect_under_weak_confounding/weak_confounding/</guid>
       <description>&lt;p&gt; &lt;/p&gt;
 &lt;h1 id=&#34;overview&#34;&gt;Overview&lt;/h1&gt;
 &lt;p&gt;In this project, we aimed to investigate the relationship between the influence of unobserved confounders and the deviation of spurious correlation from the true causal effect. This is similar to the concept of sensitivity analysis in the causal effect estimation. We utilized entropy as a measure to quantify the strength of the confounder and developed an algorithm to estimate bounds for the causal effect based on the observational distribution and the strength of confounders.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Extended Superquadric</title>
-      <link>https://ziwei-jiang.github.io/projects/superquadric/superquadric/</link>
+      <link>http://localhost:1313/projects/superquadric/superquadric/</link>
       <pubDate>Mon, 07 Feb 2022 03:14:03 -0500</pubDate>
-      <guid>https://ziwei-jiang.github.io/projects/superquadric/superquadric/</guid>
+      <guid>http://localhost:1313/projects/superquadric/superquadric/</guid>
       <description>A brief introduction to extended superquadrics.</description>
     </item>
     <item>
       <title>Robotics Specialization: Estimation and Learning</title>
-      <link>https://ziwei-jiang.github.io/projects/robotics_specialization/estimation_learning/</link>
+      <link>http://localhost:1313/projects/robotics_specialization/estimation_learning/</link>
       <pubDate>Fri, 13 Jul 2018 11:30:03 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/estimation_learning/</guid>
+      <guid>http://localhost:1313/projects/robotics_specialization/estimation_learning/</guid>
       <description>Learning and estimation for robots </description>
     </item>
     <item>
       <title>Robotics Specialization: Perception</title>
-      <link>https://ziwei-jiang.github.io/projects/robotics_specialization/perception/</link>
+      <link>http://localhost:1313/projects/robotics_specialization/perception/</link>
       <pubDate>Sun, 15 Jan 2017 11:30:03 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/perception/</guid>
+      <guid>http://localhost:1313/projects/robotics_specialization/perception/</guid>
       <description>Camera model and computer vision for robots </description>
     </item>
     <item>
       <title>Robotics Specialization: Computational Motion Planning</title>
-      <link>https://ziwei-jiang.github.io/projects/robotics_specialization/computational_motion_planning/</link>
+      <link>http://localhost:1313/projects/robotics_specialization/computational_motion_planning/</link>
       <pubDate>Tue, 15 Mar 2016 11:30:03 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/computational_motion_planning/</guid>
+      <guid>http://localhost:1313/projects/robotics_specialization/computational_motion_planning/</guid>
       <description>Motion and path planning for robots. </description>
     </item>
     <item>
       <title>Robotics Specialization: Aerial Robotics</title>
-      <link>https://ziwei-jiang.github.io/projects/robotics_specialization/aerial_robotics/</link>
+      <link>http://localhost:1313/projects/robotics_specialization/aerial_robotics/</link>
       <pubDate>Mon, 15 Feb 2016 11:30:03 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/projects/robotics_specialization/aerial_robotics/</guid>
+      <guid>http://localhost:1313/projects/robotics_specialization/aerial_robotics/</guid>
       <description>Controller design for quadrotors.  </description>
     </item>
     <item>
       <title>Notes</title>
-      <link>https://ziwei-jiang.github.io/notes/coming_soon/</link>
+      <link>http://localhost:1313/notes/coming_soon/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/notes/coming_soon/</guid>
+      <guid>http://localhost:1313/notes/coming_soon/</guid>
       <description></description>
     </item>
     <item>
       <title></title>
-      <link>https://ziwei-jiang.github.io/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/about/</guid>
+      <guid>http://localhost:1313/about/</guid>
       <description>&lt;style&gt;
   /* only this page’s paragraphs will be left-aligned */
   main p {
@@ -129,9 +129,9 @@
     </item>
     <item>
       <title></title>
-      <link>https://ziwei-jiang.github.io/frozen_lake_game/</link>
+      <link>http://localhost:1313/frozen_lake_game/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/frozen_lake_game/</guid>
+      <guid>http://localhost:1313/frozen_lake_game/</guid>
       <description>&lt;!DOCTYPE html&gt;
 &lt;html lang=&#34;en&#34;&gt;
 &lt;head&gt;
@@ -425,9 +425,9 @@ loadSprites(()=&gt;newGame(4,0.20,true));
     </item>
     <item>
       <title></title>
-      <link>https://ziwei-jiang.github.io/publications/</link>
+      <link>http://localhost:1313/publications/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://ziwei-jiang.github.io/publications/</guid>
+      <guid>http://localhost:1313/publications/</guid>
       <description>&lt;html&gt;
 &lt;head&gt;
   &lt;title&gt;Publications&lt;/title&gt;
