@@ -2,7 +2,9 @@
 languageCode: en-us
 baseURL: "https://ziwei-jiang.github.io/"
 title: Ziwei's Site
-paginate: 7
+# paginate: 7
+pagination:
+  paperSize: 7
 theme: PaperMod
 
 enableRobotsTXT: true
@@ -17,20 +19,19 @@ minify:
   minifyOutput: true
 
 params:
-  busuanzi:
-    enable: false
+  social: true
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Ziwei's Blog
   description: "This is the website of Ziwei Jiang, Ph.D. student at Purdue University. "
   keywords: [Causal Inference, Information Theory, Machine Learning, Computer Vision, Natural Language Processing, Robotics]
-  author: Ziwei Jiang
-  # author: ["Me", "You"] # multiple authors
   #images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
+  # author: Ziwei Jiang
   disableThemeToggle: false
+  ShowWordCount: false
   ShowReadingTime: false
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
@@ -41,8 +42,9 @@ params:
   hideSummary: false
   showtoc: false
   tocopen: false
+  
   mainSections:
-  - posts
+  - notes
   - projects
   label:
     text: "Ziwei Jiang 姜子维"
@@ -59,34 +61,39 @@ params:
     enabled: false # needs to be explicitly set
     title: "Welcome! \U0001F44B"
     subtitle: "Hi, my name is Ziwei Jiang. I'm a Ph.D. student at Purdue University working with Professor [Murat Kocaoglu](https://www.muratkocaoglu.com/). My research focuses on **causal inference** and **machine learning** with the **information-theoretic approach**. I'm also interested in computer vision, natural language processing, and robotics."
-    imageUrl: "images/coding.png"
+    imageUrl: "img/profile.png"
     imageWidth: 120
     imageHeight: 120
     imageTitle: ""
     buttons:
-      - name: Posts
-        url: posts
+      - name: Notes
+        url: notes
       - name: Projects
         url: projects
 
   #home-info mode
   homeInfoParams:
     Title: "Welcome! \U0001F44B"
-    Content: "Hi, my name is Ziwei Jiang. I'm a Ph.D. student at Purdue University working with Professor [Murat Kocaoglu](https://www.muratkocaoglu.com/). My research focuses on **causal inference** and **machine learning** with the **information-theoretic approach**. I'm also interested in computer vision, natural language processing, and robotics."
+    Content: 
+      "Hi, my name is Ziwei Jiang. I'm a Ph.D. student at Purdue University working with Professor [Murat Kocaoglu](https://www.muratkocaoglu.com/). My research focuses on **causal inference** and **machine learning** with the **information-theoretic approach**. I'm also interested in computer vision, natural language processing, and robotics."
+  
+  
 
   socialIcons:
+    - name: bluesky
+      url: "https://ziweijiang.bsky.social"
     - name: googlescholar
       url: "https://scholar.google.com/citations?user=FFXwkroAAAAJ&hl=en"
     - name: github
       url: "https://github.com/ziwei-jiang"
-    - name: twitter
-      url: "https://twitter.com/ziwei_jiang_"
     - name: instagram
       url: "https://www.instagram.com/alexjzw/"
     - name: 500px
       url: "https://500px.com/p/ZiweiJiang?view=photos"
     - name: goodreads
       url: "https://www.goodreads.com/user/show/53071850-ziwei-jiang"
+    - name: twitter
+      url: "https://twitter.com/ziwei_jiang_"
     - name: email
       url: "mailto:alexjiang009@gmail.com"
 
@@ -122,10 +129,10 @@ params:
     keys: ["title", "permalink", "summary", "content"]
 menu:
   main:
-    # - identifier: about
-    #   name: About
-    #   url: /about/
-    #   weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
     - identifier: tags
       name: Tags
       url: /tags/
@@ -134,9 +141,9 @@ menu:
       name: Projects
       url: /projects/
       weight: 10
-    - identifier: blogs
-      name: Posts
-      url: /posts/
+    - identifier: notes
+      name: Notes
+      url: /notes/
       weight: 10
 
     - identifier: publications

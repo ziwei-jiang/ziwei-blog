@@ -1,0 +1,20 @@
+<script>
+/* ╭─────────────────────────────────────────────╮
+   │ Disable typing in the two numeric boxes      │
+   │ – but still let ArrowUp/ArrowDown & spinners │
+   ╰─────────────────────────────────────────────╯ */
+const sizeInput  = document.getElementById("size");
+const probInput  = document.getElementById("prob");
+[sizeInput, probInput].forEach(inp => {
+  /* block most keys */
+  inp.addEventListener("keydown", e => {
+    const ok = ["ArrowUp","ArrowDown","Tab","Shift","Alt","Control","Meta",
+                "Home","End"];          // allow navigation & arrows
+    if (!ok.includes(e.key)) e.preventDefault();
+  });
+  /* prevent pasting / dragging text in */
+  ["paste","drop"].forEach(evt =>
+    inp.addEventListener(evt, e => e.preventDefault())
+  );
+});
+</script>

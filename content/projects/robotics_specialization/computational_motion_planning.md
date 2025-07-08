@@ -3,9 +3,7 @@ title: "Robotics Specialization: Computational Motion Planning"
 date: 2016-03-15T11:30:03+00:00
 weight: 5
 # aliases: ["/first"]
-tags: ["Robotics", "Graph"]
-author: "Me"
-# author: ["Me", "You"] # multiple authors
+tags: ["Robotics"]
 showToc: true
 TocOpen: true
 draft: false
@@ -18,10 +16,8 @@ disableShare: true
 disableHLJS: false
 hideSummary: false
 searchHidden: false
-ShowReadingTime: true
 ShowBreadCrumbs: false
 ShowPostNavLinks: true
-ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 math: true
@@ -73,7 +69,7 @@ Belowing is a demo result of Dijkstra algorithm implemented in Matlab. The green
 The Dijkstra algorithm can be computationally expensive on large graphs. Since the algorithm treats all nodes equally and does not consider any heuristic information about the target node, it may explore unnecessary paths. This makes it less suitable for real-time applications.
 
 ## A-Star Algorithm
-To overcome these limitations, the A-Star algorithm was developed by Peter Hart, Nils Nilsson and Bertram Raphael of Stanford Research Institute in 1968[ref]. 
+To overcome these limitations, the A-Star algorithm was developed by Peter Hart, Nils Nilsson and Bertram Raphael of Stanford Research Institute in 1968. 
 A-Star algorithm enhances Dijkstra's algorithm by introducing a heuristic function, which provides an estimate of the remaining distance from a particular node to the target node. 
 
 The heuristic function needs to satisfy the two criteria:

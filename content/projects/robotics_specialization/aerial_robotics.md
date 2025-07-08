@@ -3,9 +3,7 @@ title: "Robotics Specialization: Aerial Robotics"
 date: 2016-02-15T11:30:03+00:00
 weight: 5
 # aliases: ["/first"]
-tags: ["Robotics", "Control"]
-author: "Me"
-# author: ["Me", "You"] # multiple authors
+tags: ["Robotics"]
 showToc: true
 TocOpen: true
 draft: false
@@ -18,10 +16,8 @@ disableShare: true
 disableHLJS: false
 hideSummary: false
 searchHidden: false
-ShowReadingTime: true
 ShowBreadCrumbs: false
 ShowPostNavLinks: true
-ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 math: true

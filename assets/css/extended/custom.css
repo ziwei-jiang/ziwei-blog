@@ -1,0 +1,13 @@
+/* make the home-info block contain its floats */
+.home-info {
+  overflow: auto;
+}
+
+/* circle, smaller, and floated left */
+.home-info .profile-img {
+  float: left;
+  border-radius: 50%;
+  width: 200px;       /* tweak to taste */
+  height: 200px;
+  margin: 0 1rem 1rem 0;
+}

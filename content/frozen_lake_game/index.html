@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Frozen Lake Demo – Stats + Average & Goal Stay</title>
+<style>
+  body{margin:0;display:flex;flex-direction:column;align-items:center;
+       font-family:sans-serif;background:#e7f4ff;height:100vh;overflow:hidden;}
+  #setup{margin-top:40px}
+  #setup input[type="number"]{width:4rem;text-align:center}
+  #setup label{margin-left:8px}
+  canvas{border:2px solid #333;image-rendering:pixelated;margin-top:10px}
+  #msg,#steps,#stats,#avg{margin-top:6px}
+
+  /* Make sure every element here uses border-box sizing */
+  *,*::before,*::after{box-sizing:border-box;}
+
+  /* Basic page reset */
+  body{
+    margin:0;
+    font-family:sans-serif;
+    background:#e7f4ff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    min-height:100vh;
+  }
+
+  /* Control bar layout */
+  #setup{
+    margin-top:40px;
+    display:flex;
+    flex-wrap:wrap;
+    column-gap:1rem;
+    row-gap:0.5rem;
+    align-items:center;
+    font-size:1rem;
+    line-height:1.2;
+  }
+  #setup label{
+    display:flex;
+    align-items:center;
+    gap:0.35rem;
+  }
+  #setup input[type="number"]{
+    width:4rem;
+    padding:2px 4px;
+    text-align:center;
+    font:inherit;
+  }
+  #setup button{
+    cursor:pointer;
+    padding:4px 10px;
+    font:inherit;
+    border:1px solid #333;
+    background:#fff;
+    border-radius:4px;
+  }
+
+  /* Canvas and text below */
+  canvas{border:2px solid #333; image-rendering:pixelated; margin-top:10px;}
+  #msg,#steps,#stats,#avg{margin-top:6px;}
+  /* Keep the numeric spinners visible even when the box is not focussed
+   (works for Chrome, Edge, Safari; Firefox shows them by default) */
+  #setup input[type="number"]::-webkit-inner-spin-button,
+  #setup input[type="number"]::-webkit-outer-spin-button{
+  -webkit-appearance: inner-spin-button !important;  /* ensure they exist   */
+  opacity: 1 !important;                             /* keep them opaque    */
+}
+
+</style>
+
+</head>
+<body>
+
+<div id="setup">
+  <label>Size (N×N):
+    <input id="size" type="number" min="4" max="12" value="4">
+  </label>
+
+  <label>Holes p:
+    <input id="prob" type="number" min="0" max="0.5" step="0.05" value="0.20">
+  </label>
+
+  <label>
+    <input id="slipChk" type="checkbox" checked> Slippery
+  </label>
+
+  <!-- tabindex="-1" means it won’t grab focus after click -->
+  <button id="startBtn" tabindex="-1">Start Game</button>
+</div>
+
+
+<canvas id="c"></canvas>
+<div id="msg"></div>
+<div id="steps"></div>
+<div id="stats"></div>
+<div id="avg"></div>
+
+<script>
+/* ╭─────────────────────────────────────────────╮
+   │ Disable typing in the two numeric boxes      │
+   │ – but still let ArrowUp/ArrowDown & spinners │
+   ╰─────────────────────────────────────────────╯ */
+const sizeInput  = document.getElementById("size");
+const probInput  = document.getElementById("prob");
+[sizeInput, probInput].forEach(inp => {
+  /* block most keys */
+  inp.addEventListener("keydown", e => {
+    const ok = ["ArrowUp","ArrowDown","Tab","Shift","Alt","Control","Meta",
+                "Home","End"];          // allow navigation & arrows
+    if (!ok.includes(e.key)) e.preventDefault();
+  });
+  /* prevent pasting / dragging text in */
+  ["paste","drop"].forEach(evt =>
+    inp.addEventListener(evt, e => e.preventDefault())
+  );
+});
+
+/* -------- 1.  SPRITE LOADER -------------------------------------- */
+const SPRITES={}, TO_LOAD=[
+  ["elf_up"       ,"elf_up.png"       ],
+  ["elf_down"     , "elf_down.png"    ],
+  ["elf_left"     , "elf_left.png"    ],
+  ["elf_right"    , "elf_right.png"   ],
+  ["ice"          , "ice.png"         ],
+  ["hole"         , "hole.png"        ],
+  ["cracked_hole" , "cracked_hole.png"],
+  ["goal"         , "goal.png"        ],
+  ["stool"        , "stool.png"       ]
+];
+let READY=false;
+function loadSprites(cb){
+  let left=TO_LOAD.length;
+  TO_LOAD.forEach(([k,src])=>{
+    const img=new Image(); img.src=src;
+    img.onload=()=>{if(--left===0){READY=true;cb();}};
+    SPRITES[k]=img;
+  });
+}
+
+/* -------- 2.  GLOBAL STATE --------------------------------------- */
+const SLIP_PROB=0.8;
+let N=4, MAP=[], TILE=80, slippery=true;
+let canvas=document.getElementById("c"), ctx=canvas.getContext("2d");
+
+const msgEl  =document.getElementById("msg"),
+      stepEl =document.getElementById("steps"),
+      statEl =document.getElementById("stats"),
+      avgEl  =document.getElementById("avg");
+
+let agent={}, splash=null, steps=0;
+let wins=0, episodes=0, totalWinSteps=0;          // NEW → totals for average
+
+const DIRS={
+  ArrowUp   :{dr:-1,dc: 0,left:"ArrowLeft", right:"ArrowRight", sprite:"elf_up"},
+  ArrowDown :{dr: 1,dc: 0,left:"ArrowRight",right:"ArrowLeft",  sprite:"elf_down"},
+  ArrowLeft :{dr: 0,dc:-1,left:"ArrowDown", right:"ArrowUp",    sprite:"elf_left"},
+  ArrowRight:{dr: 0,dc: 1,left:"ArrowUp",   right:"ArrowDown",  sprite:"elf_right"},
+};
+
+/* -------- 3.  MAP GENERATION ------------------------------------- */
+function genMap(n,p=0.2,tries=200){
+  const dirs=[[1,0],[-1,0],[0,1],[0,-1]];
+  const solvable=g=>{
+    const q=[[0,0]], seen=new Set(["0,0"]);
+    while(q.length){
+      const [r,c]=q.shift();
+      if(r===n-1&&c===n-1) return true;
+      for(const[d1,d2]of dirs){
+        const nr=r+d1,nc=c+d2,k=`${nr},${nc}`;
+        if(nr>=0&&nc>=0&&nr<n&&nc<n&&g[nr][nc]!=="H"&&!seen.has(k)){
+          seen.add(k); q.push([nr,nc]);
+        }
+      }
+    }
+    return false;
+  };
+  for(let t=0;t<tries;t++){
+    const g=Array.from({length:n},_=>Array.from({length:n},_=>"F"));
+    for(let r=0;r<n;r++)for(let c=0;c<n;c++){
+      if((r===0&&c===0)||(r===n-1&&c===n-1)) continue;
+      g[r][c]=Math.random()<p?"H":"F";
+    }
+    g[0][0]="S"; g[n-1][n-1]="G";
+    if(solvable(g)) return g;
+  }
+  const g=Array.from({length:n},_=>Array.from({length:n},_=>"F"));
+  g[0][0]="S"; g[n-1][n-1]="G"; return g;
+}
+
+/* -------- 4.  RENDERING ------------------------------------------ */
+function fitCanvas(){
+  TILE=Math.floor(Math.min(innerWidth,innerHeight-180)/N);
+  TILE=Math.max(32,Math.min(96,TILE));
+  canvas.width=TILE*N; canvas.height=TILE*N;
+}
+function drawTile(img,r,c){ctx.drawImage(img,c*TILE,r*TILE,TILE,TILE);}
+function drawBoard(){
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+  for(let r=0;r<N;r++)for(let c=0;c<N;c++){
+    const t=MAP[r][c];
+    if(t==="H"){
+      if(splash&&splash.r===r&&splash.c===c&&!agent.alive)
+        drawTile(SPRITES.cracked_hole,r,c);
+      else drawTile(SPRITES.hole,r,c);
+    }else{
+      drawTile(SPRITES.ice,r,c);
+      if(t==="G") drawTile(SPRITES.goal,r,c);
+      if(t==="S") drawTile(SPRITES.stool,r ,c);
+    }
+  }
+  /* draw elf if alive **OR** already won */
+  if(agent.alive || agent.won) drawTile(SPRITES[agent.dir],agent.r,agent.c);
+}
+
+/* -------- 5.  UI UPDATERS ---------------------------------------- */
+function updateSteps(){ stepEl.innerText=`Steps: ${steps}`; }
+function updateStats(){ statEl.innerText=`Stats: ${wins} / ${episodes}`; }
+function updateAvg(){
+  avgEl.innerText = wins
+    ? `Avg steps (wins): ${(totalWinSteps/wins).toFixed(1)}`
+    : `Avg steps (wins): –`;
+}
+
+/* -------- 6.  GAME LOGIC ----------------------------------------- */
+function newGame(n,p,slip){
+  N=n; slippery=slip; splash=null;
+  MAP=genMap(N,p);
+  agent={r:0,c:0,dir:"elf_down",alive:true,won:false};
+  steps=0; fitCanvas(); drawBoard();
+  msgEl.innerText="Reach the 🎁 without falling in 💧. Use ↑←↓→";
+  updateSteps(); updateStats(); updateAvg();
+}
+function step(key){
+  if(!DIRS[key]||!agent.alive) return;
+  if(!slippery){ move(key); return; }
+  let final=key, roll=Math.random();
+  if(roll>SLIP_PROB){
+    final = roll < SLIP_PROB + (1-SLIP_PROB)/2 ? DIRS[key].left : DIRS[key].right;
+  }
+  move(final);
+}
+function move(key){
+  const {dr,dc,sprite}=DIRS[key];
+  const nr=agent.r+dr, nc=agent.c+dc;
+  if(nr<0||nc<0||nr>=N||nc>=N) return;
+  steps++; updateSteps();
+  agent.r=nr; agent.c=nc; agent.dir=sprite;
+  const t=MAP[nr][nc];
+  if(t==="H"||t==="G"){
+    splash = t==="H" ? {r:nr,c:nc} : null;
+    agent.alive=false; agent.won=(t==="G");
+    episodes++; if(agent.won){ wins++; totalWinSteps+=steps; }
+    updateStats(); updateAvg();
+    msgEl.innerText = agent.won
+      ? "🎉 You reached the gift! – press any key to play again"
+      : "💧 You fell in! – press any key to play again";
+  }
+  drawBoard();
+}
+
+/* -------- 7.  EVENT HANDLERS ------------------------------------- */
+document.getElementById("startBtn").onclick=()=>{
+  if(!READY) return;
+  /* reset cumulative counters */
+  wins=episodes=totalWinSteps=0;
+  const n=Math.max(4,Math.min(12,parseInt(size.value)||4));
+  const p=Math.max(0,Math.min(0.5,parseFloat(prob.value)||0.2));
+  const slip=document.getElementById("slipChk").checked;
+  newGame(n,p,slip);
+  /* prevent accidental re-trigger on Space / Enter */
+  document.getElementById("startBtn").blur();   // remove focus
+};
+window.addEventListener("keydown",e=>{
+  if(!READY) return;
+  if(!agent.alive){           // ended episode → start next one
+    const p=parseFloat(prob.value)||0.2;
+    const slip=document.getElementById("slipChk").checked;
+    newGame(N,p,slip);
+  }
+  step(e.key);
+});
+window.addEventListener("resize",fitCanvas);
+
+/* -------- 8.  BOOTSTRAP ------------------------------------------ */
+loadSprites(()=>newGame(4,0.20,true));
+</script>
+</body>
+</html>

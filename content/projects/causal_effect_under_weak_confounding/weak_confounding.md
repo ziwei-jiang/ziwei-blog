@@ -3,7 +3,6 @@ title: "Approximate Causal Effect Identification under Weak Confounding"
 date: 2023-07-18T11:30:03+00:00
 weight: 5
 tags: ["Causality"]
-author: "Me"
 showToc: true
 TocOpen: true
 draft: false
@@ -15,10 +14,8 @@ disableShare: true
 disableHLJS: false
 hideSummary: false
 searchHidden: false
-ShowReadingTime: true
 ShowBreadCrumbs: false
 ShowPostNavLinks: true
-ShowWordCount: true
 ShowRssButtonInSectionTermList: true
 UseHugoToc: false
 math: true
@@ -38,7 +35,7 @@ cover:
 &nbsp;
 
 # Overview
-In this project, We aimed to investigate the relationship between the influence of unobserved confounders and the deviation of spurious correlation from the true causal effect. This is similar to the concept of sensitivity analysis in the causal effect estimation. We utilized entropy as a measure to quantify the strength of the confounder and developed an algorithm to estimate bounds for the causal effect based on the observational distribution and the strength of confounders.
+In this project, we aimed to investigate the relationship between the influence of unobserved confounders and the deviation of spurious correlation from the true causal effect. This is similar to the concept of sensitivity analysis in the causal effect estimation. We utilized entropy as a measure to quantify the strength of the confounder and developed an algorithm to estimate bounds for the causal effect based on the observational distribution and the strength of confounders.
 
 
 # Checkout Our Paper and Codes
